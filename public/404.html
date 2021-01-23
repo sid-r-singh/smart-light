@@ -111,16 +111,16 @@ body {
   content: "$ ";
 }
 */
-a {
+.link {
   color: #fff;
   text-decoration: none;
 }
 
-a::before {
+.link::before {
   content: "[";
 }
 
-a::after {
+.link::after {
   content: "]";
 }
 
@@ -135,7 +135,7 @@ a::after {
     <div class="terminal">
       <h1>Error <span class="errorcode">404</span></h1>
       <p class="output">The page you are looking for might have been removed, had its name changed or is temporarily unavailable.</p>
-      <p class="output">Please try to <a href="#1">go back</a> or <a href="#2">return to the homepage</a>.</p>
+      <p class="output">Please try to <span class="link" onclick="goBack()">go back</span></p>
       <p class="output">Good luck.</p>
     </div>
   </body>
