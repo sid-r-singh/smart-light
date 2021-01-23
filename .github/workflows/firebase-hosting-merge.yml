@@ -28,3 +28,5 @@ jobs:
         sudo npm install -g firebase-tools
         firebase use mt-iot-brn --token ${{ secrets.FIREBASE_CI_SECRET  }}
         firebase deploy --token ${{ secrets.FIREBASE_CI_SECRET  }}
+    - name: Print success message
+      run: echo Successfully deployed to firebase!
