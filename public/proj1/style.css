@@ -106,27 +106,7 @@ p {
   color: #7367F0;
   font-size: 24px;
 }
-.btn {
-  display: inline-block;
-  margin: 30px auto;
-  padding: 15px 30px;
-  border: 2px solid #fff;
-  text-transform: uppercase;
-  letter-spacing: 0.015em;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1;
-  color: #fff;
-  text-decoration: none;
-  -webkit-transition: all 0.4s;
-     -moz-transition: all 0.4s;
-       -o-transition: all 0.4s;
-          transition: all 0.4s;
-}
-.btn:hover {
-  color: #005544;
-  border-color: #005544;
-}
+
 
 @media only screen and (max-width: 1300px) {
  
@@ -163,9 +143,7 @@ p {
   p {
     font-size: 18px;
   }
-  .btn {
-    font-size: 16px;
-  }
+
   div.transbox{width:95%}
 }
 
@@ -177,4 +155,33 @@ p {
     height: 4px;
   }
   div.transbox{display: none;}
+}
+
+.btn {
+  background: #68d934;
+  background-image: -webkit-linear-gradient(top, #68d934, #2bb871);
+  background-image: -moz-linear-gradient(top, #68d934, #2bb871);
+  background-image: -ms-linear-gradient(top, #68d934, #2bb871);
+  background-image: -o-linear-gradient(top, #68d934, #2bb871);
+  background-image: linear-gradient(to bottom, #68d934, #2bb871);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  display: inline-block;
+  margin: 30px auto;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
 }
